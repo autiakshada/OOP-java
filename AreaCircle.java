@@ -1,5 +1,6 @@
 //Write a java program to calculate the area of circle
-import java.util.*;
+import java.io.*;
+import java.util.Scanner;
 public class AreaCircle {
     public static void main(String args[])
     {
