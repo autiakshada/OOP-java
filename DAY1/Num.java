@@ -1,0 +1,16 @@
+class Num 
+{
+	static int n=1;
+	public static void num(int a,int b)
+	{
+		if(n<=b){
+			System.out.println(a);
+			
+			num(a+1,b);
+		}
+	}
+	public static void main(String[] args) 
+	{
+		num(4, 25);
+	}
+}

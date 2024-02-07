@@ -1,0 +1,54 @@
+import java.util.Scanner;
+class Product 
+{
+	int id;
+	String name;
+	double price;
+	//1
+	Product()
+		{
+			System.out.println("No Argumnet Constructor");
+		}
+	//2
+	Product(int id)
+	{
+		this();
+		this.id=id;
+		System.out.println("1-FA Contructor");
+	}
+	//3
+	Product(int id, String name )
+	{
+		this(id);
+		this.name=name;
+		System.out.println("2-FA Contructor");
+	}
+	//4
+	Product(int id, String name, double price)
+	{
+		this(id, name);
+		this.price=price;
+		System.out.println("3-FA Contructor");
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the product id:");
+		int a=sc.nextInt();
+		System.out.println("Enter the product name:");
+		String b=sc.next();
+		System.out.println("Enter the product price" );
+		double c=sc.nextDouble();
+		Product ref1= new Product();
+		Product ref1= new Product(a);
+		Product ref1= new Product(a, b);
+		Product ref1= new Product(a, b, c);
+		System.out.println("===========================");
+		System.out.println("1st product details");
+		System.out.println("Product ID: "+ref1.id);
+		System.out.println("Product NAME: "+ref1.name);
+		System.out.println("Product PRICE "+ref1.price);
+		System.out.println("===========================");
+		
+	}
+}

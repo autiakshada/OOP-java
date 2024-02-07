@@ -1,0 +1,15 @@
+class P1 
+{
+	public static void num(char a)
+	{
+		if (a<='z')
+		{
+			System.out.println(a);
+			num(++a+ 1);
+		}
+	}
+	public static void main(String[] args) 
+	{
+		num('b');
+	}
+}

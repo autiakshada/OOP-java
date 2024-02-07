@@ -1,0 +1,13 @@
+class P1
+{
+	public static void substract(int num1, int num2, int num3)
+	{
+		int result =num1-num2-num3;
+		System.out.println(result);
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("Substraction of three numbers:");
+		substract(12,3,5);
+	}
+}

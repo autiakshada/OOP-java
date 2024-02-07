@@ -1,0 +1,32 @@
+import java.util.Scanner
+
+class Customer 
+{
+	int Cid;
+	int CAge;
+	String CName;
+	Customer(int Cid,int CAge,String CName)
+	{
+		this.Cid= Cid;
+		this.CAge= CAge;
+		this.CName= CName;
+	}
+	public static void main(String[] args) 
+	{
+	  Customer ref1 = new Customer(001,22,"sam");
+	  Customer ref2 = new Customer(002,23,"sami");
+	  System.out.println("Cid:"+ref1.Cid);
+	  	  System.out.println("CAge:"+ref1.CAge);
+		  	  System.out.println("CName:"+ref1.CName);
+
+			  System.out.println("========================");
+
+			  	  System.out.println("Cid:"+ref2.Cid);
+	  	  System.out.println("CAge:"+ref2.CAge);
+		  	  System.out.println("CName:"+ref2.CName);
+
+			  System.out.println("========================");
+
+
+	}
+}

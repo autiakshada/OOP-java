@@ -1,0 +1,12 @@
+class P3{
+	public static void numbers(int a) {
+        if (a <= 850) {
+            System.out.println(a);
+            numbers(++a);
+        }
+    }
+    public static void main(String[] args) {
+		System.out.println("The charachter from Z to A");
+        numbers(85);
+    }
+}
