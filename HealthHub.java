@@ -1,0 +1,100 @@
+import java.util.Scanner;
+//Super class
+class user
+{
+	private String uName;
+	private String pwd;
+	//Constructor
+	user(String uName,String pwd)
+	{
+		this.uName=uName;
+		this.pwd=pwd;
+	}
+
+	//getter is used to get private data
+	public String getuName()
+	{
+		return uName;
+	}
+
+	public String getpwd()
+	{
+		return pwd;
+	}
+
+	//setter is used to set/modify private data
+	public void setuName(String uName)
+	{
+		this.uName=uName;
+	}
+
+	public void setpwd(String pwd)
+	{
+		this.pwd=pwd;
+	}
+}
+//Driver class
+class HealthHub 
+{
+	public static void main(String[] args) 
+	{
+		
+		System.out.println("Discover Your Wellness: Welcome to HealthHub");
+		System.out.println("**********************************************");
+		System.out.println("Please Login or Create an account to get started...");
+
+		//create a scanner object to take the input from user
+		Scanner sc= new Scanner(System.in);
+
+		System.out.println("1 : Login");
+		System.out.println("2 : Create an Account");
+		System.out.println("3 : Exit");
+		
+		System.out.print("Enter your choice: ");
+		int choice=sc.nextInt();
+		sc.nextLine();//next line
+		switch(choice)
+		{
+			case 1: 
+				System.out.println("Enter Username: ");
+				sc.nextLine();
+				String username=sc.nextLine();
+				System.out.println("Enter Password: ");
+				String pwd=sc.nextLine();
+				// Incomplete........
+				break;
+			case 2:
+				System.out.println("Enter new username: ");
+				String newname=sc.nextLine();
+				System.out.println("Create new password: ");
+				String newpass=sc.nextLine();
+				System.out.println("Confirm password: ");
+				String confirmpass=sc.nextLine();
+
+				/* In java we use "equals()" method to compare string
+				because "==" compares object references, not the actual content 
+				of the strings */
+			//if(newpass==confirmpass)*****if we use this we get wrong output 
+			if (newpass.equals(confirmpass))//condition to check that password is match or not
+			{
+					user ref=new user(newname,newpass);
+					System.out.println("Account Created successfully!!!!");
+			}
+			else
+			{
+				System.out.println("Password do not match. Account Creation failed.....");
+			}
+			break;
+
+			case 3:
+				 System.out.println("Exiting HealthHub. Goodbye!");
+                 break;
+			
+			default:
+			    System.out.println("Invalid choice.Please try again...");
+				break;
+		}//switch close
+
+	}//main method close 
+
+}// class close 
