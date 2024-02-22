@@ -26,19 +26,22 @@ class CustomerD
 {
 	public static void main(String[] args) 
 	{
-		Product ref1=new Product(10,"Notebook","Classmate",160);
-		System.out.println(productDetails);
+		Product productDetails=new Product(10,"Notebook","Classmate",160);
+		System.out.print(productDetails);
 		System.out.println("===================");
-		Product ref2=new Product(20,"Pen","Lexii", 20);
-		System.out.println(productDetails);
+		Product productDetails1=new Product(20,"Pen","Lexii", 20);
+		System.out.print(productDetails1);
 		System.out.println("===================");
-		Product ref3=new Product(30,"Laptop","Dell",900000);
-		System.out.println(productDetails);
+		Product productDetails2=new Product(30,"Laptop","Dell",900000);
+		System.out.print(productDetails2);
 		System.out.println("===================");
-		Product ref4=new Product(40,"Moblie","OPPO",15000);
-		System.out.println(productDetails);
+		Product productDetails3=new Product(40,"Moblie","OPPO",15000);
+		System.out.print(productDetails3);
 		System.out.println("===================");
-		Product ref5=new Product(50,"Headphone","Boat",12000);
+		Product productDetails4=new Product(50,"Headphone","Boat",12000);
+		System.out.println(productDetails4);
+		System.out.println("===================");
+
 		
 	}
 }
