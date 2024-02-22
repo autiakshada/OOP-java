@@ -1,3 +1,9 @@
+/*Write a Java program for the product class consisting of PID, name, brand, and price.
+1] Create a customer class to have at least 5 different products.  
+2] Initialize each product details using a constructor.  
+3] implements toString() method to print each product details.
+*/
+
 class Product
 {
 	int pid;
