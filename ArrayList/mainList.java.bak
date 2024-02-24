@@ -12,7 +12,7 @@ class mainList
 		int obj;
 		Scanner sc= new Scanner(System.in);
 		ArrayList ref=new ArrayList();
-		for(obj=1; obj<5; obj++)
+		for(obj=1; obj<26; obj++)
 		{
 			System.out.println("Enter "+obj+" object: ");
 			String data = sc.nextLine();
