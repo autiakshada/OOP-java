@@ -1,0 +1,59 @@
+/*Write a Java program to create at least 2 IPL teams such as MI  and CSK 
+1] Add all the players into their respective teams 
+2] Check MS Dhoni playing for CSK or not
+	if dhoni is playing then print "Thala is back again " 
+	else print "oh sad news dhoni is not playing anymore " 
+3]check hardik pandya is playing for MI 
+	if yes print "management decision is not appropriate " 
+	else "wow amazing good to hear for MI fans"
+4]Remove hardik pandya from MI and print "Rohit is back"  
+5]add all the players of MI into CSK .
+6] print all the players one by one.
+*/
+import java.util.ArrayList;
+class IPLTeams 
+{
+	public static void main(String[] args) 
+	{
+        ArrayList MI = new ArrayList();
+        ArrayList CSK = new ArrayList();
+        MI.add("Hardik Pandya");
+		MI.add("Rohit Sharma");
+        MI.add("Kieron Pollard");
+        MI.add("Jasprit Bumrah");
+
+        // Add players to CSK
+        CSK.add("MS Dhoni");
+        CSK.add("Suresh Raina");
+        CSK.add("Ravindra Jadeja");
+		CSK.add("Deepak Chahar");
+        
+		if (CSK.contains("MS Dhoni")) 
+		{
+            System.out.println("Thala is back again");
+        } 
+		else 
+		{
+            System.out.println("Oh sad news, Dhoni is not playing anymore");
+        }
+		if (MI.contains("Hardik Pandya")) 
+		{
+            System.out.println("Management decision is not appropriate");
+        } 
+		else
+		{
+            System.out.println("Wow amazing, good to hear for MI fans");
+        }
+        MI.remove("Hardik Pandya");// Remove Hardik Pandya from MI
+        System.out.println("Rohit is back");
+		CSK.addAll(MI); // Add all the players of MI into CSK
+
+		System.out.println("Players in CSK now:");
+		for (int i = 0; i < CSK.size(); i++) 
+		{
+			System.out.println(CSK.get(i));
+		}
+
+    }
+}
+
