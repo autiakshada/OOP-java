@@ -10,7 +10,7 @@ class mainList
 	public static void main(String[] args) 
 	{	
 		int obj;
-		Scanner sc= new Scanner(System.in);
+		Scanner sc= new Scanner(System.in);-
 		ArrayList ref=new ArrayList();
 		for(obj=1; obj<26; obj++)
 		{

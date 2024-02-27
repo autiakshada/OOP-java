@@ -16,7 +16,6 @@ class mainList
 		{
 			System.out.println("Enter "+obj+" object: ");
 			String data = sc.nextLine();
-			//Scanner ab=new Scanner(System.in);
 			ref.add(data);
 		}
 		System.out.println("Objects in the ArrayList:");
