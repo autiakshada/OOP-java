@@ -58,6 +58,7 @@ class Students
 		ref1.introduce();
 		ref1.attendClass();
 		ref1.study();
+
 		ref2.introduce();
 		ref2.attendClass();
 		ref2.study();
@@ -73,8 +74,10 @@ abstract class Student
 		this.age=age;
 	}
 	//abstract methods
+	//abstract methods is prefix with the abstract keyword and ends with ;
 	public abstract void attendClass();
 	public abstract void study();
+
 	//concrete method
 	public void introduce()
 	{

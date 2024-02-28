@@ -58,6 +58,7 @@ class SoccerPlayer extends Player
 		this.name=name;
 		this.position=position;
 	}
+	//Override method
 	@Override
 	public void getInfo()
 	{
