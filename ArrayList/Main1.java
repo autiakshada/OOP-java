@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+class Main1
+{
+     public static void main(String []args)
+		{
+            Scanner sc= new Scanner(System.in);
+            ArrayList ref=new ArrayList();
+			System.out.println("Enter 16 object: ");
+		    for(int obj=1; obj<6; obj++)
+		    {
+                String data = sc.next();
+                ref.add(data);
+            }
+			System.out.println("All the objects one by one using get(index)");
+            for(int i=0; i<ref.size();i++)
+            {
+                System.out.println(ref.get(i));
+            }
+			System.out.println("Remove null if it is present");
+            if(ref.contains("null"))
+				{
+					ref.remove("null");
+						
+				}
+				else
+				{
+					System.out.println("Null object does not exists");
+				}
+			System.out.println("List "+ref);
+			System.out.println("=====for-each loop======");
+			for(Object obj:ref)
+			{
+				System.out.println(obj);
+			}
+		}
+}
