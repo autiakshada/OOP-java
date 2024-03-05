@@ -15,7 +15,6 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.ListIterator;
 import java.util.Collections;
-import java.util.Iterator;
 class EmpManagement  
 {
 	public static void main(String[] args) 
@@ -28,17 +27,17 @@ class EmpManagement
 			String name=sc.nextLine();
 			emp.add(name);
 		}
-		System.out.println("Employee name in forword direction by using get(index): ");
+		System.out.println("Employee name in forward direction by using get(index): ");
 		for(int i = 0; i < emp.size(); i++)
 		{
 			System.out.println(emp.get(i));
 		}
-		System.out.println("Employee name in backword direction by using get(index): ");
+		System.out.println("Employee name in backward direction by using get(index): ");
 		for(int i = emp.size() - 1; i>=0; i--)
 		{
 			System.out.println(emp.get(i));
 		}
-		System.out.println("Employee name in forword direction by using listIterator(): ");
+		System.out.println("Employee name in forward direction by using listIterator(): ");
 		ListIterator forwardIterator = emp.listIterator();
         while (forwardIterator.hasNext()) 
 		{
@@ -75,3 +74,4 @@ class EmpManagement
         }
 	}
 }
+

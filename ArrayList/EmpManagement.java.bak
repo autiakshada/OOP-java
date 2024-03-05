@@ -22,23 +22,23 @@ class EmpManagement
 	{
 		ArrayList emp=new ArrayList();
 		Scanner sc= new Scanner(System.in);
-		for (int i = 1; i < 5; i++)
+		for (int i = 1; i <= 15; i++)
 		{
 			System.out.println("Enter "+i+" employee name: "); 
 			String name=sc.nextLine();
 			emp.add(name);
 		}
-		System.out.println("Employee name in forword direction by using get(index): ");
+		System.out.println("Employee name in forward direction by using get(index): ");
 		for(int i = 0; i < emp.size(); i++)
 		{
 			System.out.println(emp.get(i));
 		}
-		System.out.println("Employee name in backword direction by using get(index): ");
+		System.out.println("Employee name in backward direction by using get(index): ");
 		for(int i = emp.size() - 1; i>=0; i--)
 		{
 			System.out.println(emp.get(i));
 		}
-		System.out.println("Employee name in forword direction by using listIterator(): ");
+		System.out.println("Employee name in forward direction by using listIterator(): ");
 		ListIterator forwardIterator = emp.listIterator();
         while (forwardIterator.hasNext()) 
 		{
@@ -51,7 +51,7 @@ class EmpManagement
             System.out.println(backwardIterator.previous());
         }
 		emp.remove(2);
-		emp.remove(4);
+		emp.remove(3);
 		emp.remove(8);
 		emp.remove(11);
 		if(emp.contains("Mr Smith"))
