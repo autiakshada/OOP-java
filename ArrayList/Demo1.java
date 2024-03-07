@@ -1,0 +1,26 @@
+
+import java.util.LinkedList;
+class Demo1
+{
+	public static void main(String[] args) 
+	{
+		LinkedList ref= new LinkedList();
+		ref.add('c');
+		ref.add("pen");
+		ref.add("book");
+		ref.add(10);
+		ref.add('a');
+		ref.add(20);
+		ref.add("bag");
+		ref.add(2);
+		ref.add(null);
+		ref.add(true);
+		ref.add("sam");
+		System.out.println("LinkedList: "+ref);
+		for (Object Obj : ref) 
+		{
+            System.out.println(Obj);
+        }
+	}
+}
+
