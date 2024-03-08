@@ -1,0 +1,9 @@
+//Write a java program to add objects into PriorityQueue and print all the objects one by one. 
+import java.util.PriorityQueue;
+class PriorityDemo
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+}
