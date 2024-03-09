@@ -1,0 +1,36 @@
+/*Write a java program to add 14 objects
+
+*/
+import java.util.*;
+class A1 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc= new Scanner(System.in);
+		TreeMap<Integer,String> treemap =new TreeMap<Integer,String>();
+		for(int i=0 ; i<=3; i++)
+		{
+			System.out.println("Enter Key: ");
+			int key =sc.nextInt();
+			System.out.println("Enter Values: ");
+			String values =sc.next();
+			treemap.put(key,values);
+		}
+		System.out.println(treemap);
+		//converting treemap into treeset
+		//TreeSet<Integer> treeset= new TreeSet<Integer> (); 
+		Set s= treemap.entrySet();
+		//System.out.println(treemap.entrySet());
+		LinkedHashSet<Object> h=new LinkedHashSet(s)
+	//	HashSet<Object> h=new HashSet(s);
+		for ( Object obj : s)
+		{
+			System.out.println(obj);
+		}
+		ArrayList<Object> h=new ArrayList(s);
+		System.out.println(
+		//converting treeset into list
+		//ArrayList treeset= new ArrayList(treeSet);
+		//System.out.println(treeset);
+	}
+}
